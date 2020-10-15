@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.mithilesh.springcore.collections.Employee" name="employee">
+
+		<property name="empName" value="mithilesh"/>
+
+		<property name="empPhones">
+			<list>
+
+				<value>8305990103</value>
+				<value>8518017042</value>
+				<value>7898820995</value>
+				
+
+			</list>
+
+
+		</property>
+
+		<property name="empAddresses">
+			<set>
+
+				<value>singrauli</value>
+				<value>roorkee</value>
+				<value>kota</value>
+
+			</set>
+
+		</property>
+
+
+		<property name="empCourses">
+
+			<map>
+
+				<entry key="java" value="2 months" />
+				<entry key="python" value="1 month" />
+				<entry key="data structure" value="3 months" />
+
+
+			</map>
+
+
+		</property>
+		<property name="empProperties">
+		
+		<props>
+		  
+		<prop key="name">mithilesh</prop>
+		<prop key="village">gadahara</prop>
+		
+		</props>
+		
+		
+		</property>
+
+
+
+
+	</bean>
+
+
+
+</beans>
